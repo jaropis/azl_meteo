@@ -26,7 +26,7 @@ rain <- table_values[which(table_values  %in% "storm Rain") + 1] %>%
 
 now <- Sys.time()
 
-meteo <- readRDS("/Users/jaropis/projects/zg_meteo/meteo.RDS")
+meteo <- readRDS("/root/azl_meteo/meteo.RDS")
 current_meteo <- data.frame(now, 
                             pressure, 
                             temperature, 
@@ -35,4 +35,4 @@ current_meteo <- data.frame(now,
                             rain)
 meteo <- rbind(meteo, current_meteo)
 print(meteo)
-saveRDS(meteo, file = "meteo.RDS")
+saveRDS(meteo, file = "/root/azl_meteo/meteo.RDS")
