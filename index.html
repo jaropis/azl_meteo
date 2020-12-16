@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather in Przyplep</title>
+    <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+</head>
+<body>
+    <div id="weather" style="width:1200px;height:650px;"></div>
+    <div id="azl" style="width:1200px;height:650px;"></div>
+    <script>
+        weather = document.getElementById('weather');
+        var trace1 = {
+        x: [1, 2, 3, 4, 5],
+        y: [1, 2, 4, 8, 16] }
+        var trace2 = {
+            x: [1, 2, 3, 4, 5, 6],
+            y: [10, 9, 8, -8, -9, -10]
+        }
+        var data = [trace1, trace2];
+        var config = {
+        margin: { t: 0 } };
+        Plotly.newPlot(weather, data, config);
+    </script>
+    <script>
+        azl = document.getElementById('azl');
+        var trace1_azl = {"x":["2020-12-16 13:55:33","2020-12-16 13:59:10","2020-12-16 14:15:40","2020-12-16 14:43:57","2020-12-16 15:08:22","2020-12-16 15:52:08","2020-12-16 16:19:02","2020-12-16 16:20:01","2020-12-16 16:21:01","2020-12-16 16:22:02","2020-12-16 16:23:02","2020-12-16 16:24:01","2020-12-16 16:25:02","2020-12-16 16:26:02","2020-12-16 16:27:01","2020-12-16 16:28:02","2020-12-16 16:29:01","2020-12-16 16:30:02","2020-12-16 16:31:02","2020-12-16 16:32:01","2020-12-16 16:33:02","2020-12-16 16:34:02","2020-12-16 16:35:01","2020-12-16 16:36:02","2020-12-16 16:37:01","2020-12-16 16:38:02","2020-12-16 16:39:02","2020-12-16 18:00:02","2020-12-16 19:00:02","2020-12-16 20:00:04"], "y":[1018.7,1018.7,1018.8,1018.7,1018.9,1019.3,1019.5,1019.5,1019.5,1019.5,1019.5,1019.6,1019.6,1019.6,1019.6,1019.6,1019.6,1019.6,1019.6,1019.6,1019.6,1019.6,1019.6,1019.6,1019.6,1019.6,1019.6,1019.9,1020.3,1020.4]}
+        var data_azl = [trace1_azl]
+        var layout = {
+            xaxis: {
+                type: 'date',
+                title: 'Pogoda'
+            },
+            yaxis: {
+                title: 'cisnienie'
+            },
+            title:'2020'
+        };
+        Plotly.newPlot(azl, data_azl, layout)
+    </script>
+</body>
+</html>

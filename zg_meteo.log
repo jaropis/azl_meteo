@@ -941,3 +941,10 @@ Loading required package: xml2
 28    0
 29    0
 30    0
+Ladowanie wymaganego pakietu: xml2
+Blad w poleceniu 'gzfile(file, "rb")':nie mozna otworzy'c polaczenia
+Wywolania: readRDS -> gzfile
+Dodatkowo: Komunikat ostrzegawczy:
+W poleceniu 'gzfile(file, "rb")':
+  nie mozna otworzy'c skompresowanego pliku '/root/azl_meteo/meteo.RDS', prawdopodobny pow'od 'No such file or directory'
+Wykonywanie wstrzymane
