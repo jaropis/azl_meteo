@@ -34,5 +34,4 @@ current_meteo <- data.frame(now,
                             outside_humidity, 
                             rain)
 meteo <- rbind(meteo, current_meteo)
-print(meteo)
 saveRDS(meteo, file = "/root/azl_meteo/meteo.RDS")
