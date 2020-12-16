@@ -1,0 +1,92 @@
+Ladowanie wymaganego pakietu: xml2
+Blad w poleceniu 'gzfile(file, "rb")':nie mozna otworzy'c polaczenia
+Wywolania: readRDS -> gzfile
+Dodatkowo: Komunikat ostrzegawczy:
+W poleceniu 'gzfile(file, "rb")':
+  nie mozna otworzy'c skompresowanego pliku 'meteo.RDS', prawdopodobny pow'od 'No such file or directory'
+Wykonywanie wstrzymane
+Ladowanie wymaganego pakietu: xml2
+                  now pressure temperature inside_humidity outside_humidity
+1 2020-12-16 13:55:33   1018.7         7.3              27               91
+2 2020-12-16 13:59:10   1018.7         7.5              27               91
+3 2020-12-16 14:15:40   1018.8         7.6              28               91
+4 2020-12-16 14:43:57   1018.7         7.7              28               91
+5 2020-12-16 15:08:22   1018.9         7.5              28               91
+6 2020-12-16 15:52:08   1019.3         7.2              28               92
+7 2020-12-16 16:00:01   1019.4         7.2              28               92
+  rain
+1    0
+2    0
+3    0
+4    0
+5    0
+6    0
+7    0
+Ladowanie wymaganego pakietu: xml2
+                  now pressure temperature inside_humidity outside_humidity
+1 2020-12-16 13:55:33   1018.7         7.3              27               91
+2 2020-12-16 13:59:10   1018.7         7.5              27               91
+3 2020-12-16 14:15:40   1018.8         7.6              28               91
+4 2020-12-16 14:43:57   1018.7         7.7              28               91
+5 2020-12-16 15:08:22   1018.9         7.5              28               91
+6 2020-12-16 15:52:08   1019.3         7.2              28               92
+7 2020-12-16 16:01:01   1019.4         7.2              28               92
+  rain
+1    0
+2    0
+3    0
+4    0
+5    0
+6    0
+7    0
+Ladowanie wymaganego pakietu: xml2
+                  now pressure temperature inside_humidity outside_humidity
+1 2020-12-16 13:55:33   1018.7         7.3              27               91
+2 2020-12-16 13:59:10   1018.7         7.5              27               91
+3 2020-12-16 14:15:40   1018.8         7.6              28               91
+4 2020-12-16 14:43:57   1018.7         7.7              28               91
+5 2020-12-16 15:08:22   1018.9         7.5              28               91
+6 2020-12-16 15:52:08   1019.3         7.2              28               92
+7 2020-12-16 16:02:01   1019.4         7.2              28               92
+  rain
+1    0
+2    0
+3    0
+4    0
+5    0
+6    0
+7    0
+Ladowanie wymaganego pakietu: xml2
+                  now pressure temperature inside_humidity outside_humidity
+1 2020-12-16 13:55:33   1018.7         7.3              27               91
+2 2020-12-16 13:59:10   1018.7         7.5              27               91
+3 2020-12-16 14:15:40   1018.8         7.6              28               91
+4 2020-12-16 14:43:57   1018.7         7.7              28               91
+5 2020-12-16 15:08:22   1018.9         7.5              28               91
+6 2020-12-16 15:52:08   1019.3         7.2              28               92
+7 2020-12-16 16:03:01   1019.4         7.2              28               92
+  rain
+1    0
+2    0
+3    0
+4    0
+5    0
+6    0
+7    0
+Ladowanie wymaganego pakietu: xml2
+                  now pressure temperature inside_humidity outside_humidity
+1 2020-12-16 13:55:33   1018.7         7.3              27               91
+2 2020-12-16 13:59:10   1018.7         7.5              27               91
+3 2020-12-16 14:15:40   1018.8         7.6              28               91
+4 2020-12-16 14:43:57   1018.7         7.7              28               91
+5 2020-12-16 15:08:22   1018.9         7.5              28               91
+6 2020-12-16 15:52:08   1019.3         7.2              28               92
+7 2020-12-16 16:04:01   1019.4         7.2              28               92
+  rain
+1    0
+2    0
+3    0
+4    0
+5    0
+6    0
+7    0
