@@ -4,7 +4,12 @@ prepare_weather <- function() {
   #pressure <- list(x = data$now, y = data$pressure)
   #jsonlite::toJSON(pressure)
   #jsonlite::write_json(pressure, "pressure.json")
-  list(x = data$now, y = data$pressure)
+  list(time = data$now,
+       pressure = data$pressure,
+       temperature = data$temperature,
+       inside_humidity = data$inside_humidity,
+       outside_humidity = data$outside_humidity,
+       rain = data$rain)
 }
 
 #* @filter cors
