@@ -6,3 +6,9 @@ prepare_weather <- function() {
   #jsonlite::write_json(pressure, "pressure.json")
   list(x = data$now, y = data$pressure)
 }
+
+#* @filter cors
+cors <- function(res) {
+    res$setHeader("Access-Control-Allow-Origin", "*")
+    plumber::forward()
+}
