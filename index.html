@@ -4,30 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather in Przyplep</title>
-    <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 </head>
 <body>
+    <h2>Pomiary na lotnisku w Przylepie</h2>
     <div id="azl" style="width:1200px;height:650px;"></div>
     <script>
-        function logDataset () { 
-            console.log(trace1_azl); 
-        }
         azl = document.getElementById('azl');
         fetch('http://opengranary.com:8000/')
             .then(response => response.json())
             .then(json => {
-                var trace1_azl = json;
+                var trace1_azl = {x: json['time'],
+                                  y: json['pressure'],
+                                  
+                };
+                var trace2_azl = {x: json['time'],
+                                  y: json['temperature'],
+                                  yaxis: 'y2',
+                };
                 console.log(trace1_azl)
-                var data_azl = [trace1_azl]
+                console.log(trace2_azl)
+                var data_azl = [trace1_azl, trace2_azl]
                 var layout = {
-                    xaxis: {
-                        type: 'date',
-                        title: 'Pogoda'
+                    grid: {
+                        rows: 2,
+                        columns: 1,
+                        subplots: [['xy'], ['xy2']]
                     },
                     yaxis: {
-                        title: 'cisnienie'
+                        title: 'ciśnienie [mmHG]',
                     },
-                    title:'2020'
+                    yaxis2: {
+                        title: 'temperatura [C]',
+                    },
+                    showlegend: false
+                    //grid: {rows: 2, columns: 1, pattern: 'independent'}
                 };
                 Plotly.newPlot(azl, data_azl, layout)
             });
