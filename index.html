@@ -13,7 +13,7 @@
             console.log(trace1_azl); 
         }
         azl = document.getElementById('azl');
-        fetch('pressure.json')
+        fetch('http://opengranary.com:8000/')
             .then(response => response.json())
             .then(json => {
                 var trace1_azl = json;
