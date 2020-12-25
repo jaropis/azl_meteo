@@ -4,6 +4,7 @@ prepare_weather <- function() {
   #pressure <- list(x = data$now, y = data$pressure)
   #jsonlite::toJSON(pressure)
   #jsonlite::write_json(pressure, "pressure.json")
+  data <- data[(nrow(data) - 48):nrow(data), ]
   list(time = data$now,
        pressure = data$pressure,
        temperature = data$temperature,
