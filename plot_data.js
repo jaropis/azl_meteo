@@ -49,6 +49,7 @@ azl = document.getElementById('azl');
                     },
                     showlegend: false
                 };
-                Plotly.newPlot(azl, data_azl, layout);
+                var config = {responsive: true};
+                Plotly.newPlot(azl, data_azl, layout, config);
             });
 })();
