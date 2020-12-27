@@ -1,6 +1,7 @@
-(function plot_data () {
+
+function plot_data (hours) {
 azl = document.getElementById('azl');
-        fetch('http://opengranary.com:8000/')
+        fetch(`http://opengranary.com:8000/hourData?hours=${hours}`)
             .then(response => response.json())
             .then(json => {
                 var trace_pressure = {x: json['time'],
@@ -23,8 +24,6 @@ azl = document.getElementById('azl');
                                   y: json['rain'],
                                   yaxis: 'y5',
                 };
-                console.log(trace_pressure)
-                console.log(trace_temperature)
                 var data_azl = [trace_pressure, trace_temperature, trace_inside_humidity, trace_outside_humidity, trace_rain]
                 var layout = {
                     grid: {
@@ -52,4 +51,13 @@ azl = document.getElementById('azl');
                 var config = {responsive: true};
                 Plotly.newPlot(azl, data_azl, layout, config);
             });
-})();
+}
+
+function selectHours() {
+  const input = document.getElementById('number-of-hours');
+  input.focus();
+  input.select();
+  plot_data(input.value);
+}
+
+plot_data(48);
